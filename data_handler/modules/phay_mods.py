@@ -6,11 +6,15 @@ Utilities for working with SF restaurant data.
 def read_file(filename):
 	"""
 	Read a CSV file of San Francisco public city restaurant inspection data.
-	--https://data.sfgov.org/Health-and-Social-Services/Restaurant-Scores-LIVES-Standard/pyih-qa8l/data
+	--https://data.sfgov.org/Health-and-Social-Services/Restaurant-Scores-LIVES-Standard/pyih-qa8i
 	
 
 	Returns list of dictionaries with one dictionary per row of the file.
 	"""
+	with open(filename) as file:
+		reader = csv.DictReader(file)
+		return list(reader)
+
 
 def filter_inspection_type(data, inspection_type):
 	"""
