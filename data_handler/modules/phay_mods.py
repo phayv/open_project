@@ -2,6 +2,8 @@
 Utilities for working with SF restaurant data.
 
 """
+import csv
+
 
 def read_file(filename):
 	"""
