@@ -1,6 +1,6 @@
 from modules.phay_mods import *
 
-TEST_FILE = "data_sources/sf_restaurant_scores_subset.csv"
+TEST_FILE = "data_sources/sf_restaurant_subset.csv"
 
 def test_read_file():
 	data = read_file(TEST_FILE)
