@@ -20,3 +20,8 @@ def test_filter_inspection_type():
 		{'inspection_type' : 'A'}, {'inspection_type' : 'A'}]
 	assert filter_inspection_type(data, 'B') == [
 		{'inspection_type' : 'B'}]
+
+	#edge case
+	assert filter_inspection_type([], 'A') == []
+	assert filter_inspection_type(data, 'Z') == []
+

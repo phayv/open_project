@@ -22,7 +22,7 @@ def filter_inspection_type(data, inspection_type):
 	"""
 	Filter data to only include rows with a given inspection type
 	"""
-
+	return [row for row in data if row['inspection_type'] == inspection_type]
 
 
 def filter_month(data, month, year):
