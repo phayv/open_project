@@ -3,6 +3,7 @@ Utilities for working with SF restaurant data.
 
 """
 import csv
+from collections import Counter
 
 
 def read_file(filename):
@@ -30,6 +31,8 @@ def filter_month(data, month, year):
 	Filter data to only include rows from a given month.
 
 	could use an API...
+	EX: 05/07/2018 12:00:00 AM
+	so we want month and year extracted...
 
 	Returns a list of filtered data.
 	"""
@@ -41,6 +44,7 @@ def count_risk_categories(data):
 
 	Returns dictionary pairing a risk caetegory with a number of occurences.
 	"""
+	return Counter([row['risk_category'] for row in data])
 
 def count_risk_categories_by_month(data, month, year):
 	"""
