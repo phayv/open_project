@@ -9,10 +9,10 @@ TEST_FILE = "data_sources/sf_restaurant_subset.csv"
 def data():
 	return read_file(TEST_FILE)
 
-
 def test_read_file(data):
 	assert len(data) == 100
 	assert len(data[0].keys()) == 17
+	assert ('inspection_type' in data[0].keys())
 
 def test_filter_inspection_type():
 	data = [
