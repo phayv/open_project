@@ -31,7 +31,7 @@ def test_filter_inspection_type():
 	assert filter_inspection_type([], 'A') == []
 	assert filter_inspection_type(data, 'Z') == []
 
-
-
-
-
+def test_filter_month(data):
+	assert len(filter_month(data, 5, 2017)) == 23
+	assert len(filter_month(data, 12, 2017)) == 12
+	assert filter_month(data, 12, 1400) == []
