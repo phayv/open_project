@@ -35,3 +35,12 @@ def test_filter_month(data):
 	assert len(filter_month(data, 5, 2017)) == 23
 	assert len(filter_month(data, 12, 2017)) == 12
 	assert filter_month(data, 12, 1400) == []
+
+def test_count_risk_categories(data):
+	assert count_risk_categories(data) == {
+		'Low Risk' : 35,
+		'Moderate Risk': 31,
+		'High Risk' : 10,
+		'No Violations' : 1,
+		'' : 24,
+	}
