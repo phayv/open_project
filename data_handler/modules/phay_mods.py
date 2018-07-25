@@ -36,6 +36,18 @@ def filter_month(data, month, year):
 
 	Returns a list of filtered data.
 	"""
+	input_month = str(month).zfill(2)
+    input_year = str(year)
+
+    month_data = []
+
+    for row in data:
+        date_as_string = row['inspection_date'][:10]
+        month, day, year = date_as_string.split('/')
+        if input_month == month and input_year == year:
+            month_data.append(row)
+
+    return month_data
 
 
 def count_risk_categories(data):
