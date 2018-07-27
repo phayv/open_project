@@ -11,3 +11,4 @@ __author__ = "Phay Vong"
 __version__ = "1.0"
 
 from modules.phay_mods import *
+from modules.library import *
