@@ -3,6 +3,7 @@ Utilities for working with SF restaurant data.
 
 """
 import csv
+from library import *
 from collections import Counter
 
 
@@ -62,5 +63,5 @@ def count_risk_categories_by_month(data, month, year):
 	"""
 	Count the number of risk categories in a given month.
 
-	
 	"""
+	
