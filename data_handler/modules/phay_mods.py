@@ -57,7 +57,11 @@ def count_risk_categories(data):
 
 	Returns dictionary pairing a risk caetegory with a number of occurences.
 	"""
-	return Counter([row['risk_category'] for row in data])
+	results = Counter([row['risk_category'] for row in data])
+    if '' in results:
+        results['No Violations'] = results['']
+        del results['']
+    return results
 
 def count_risk_categories_by_month(data, month, year):
 	"""
