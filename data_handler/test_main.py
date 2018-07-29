@@ -45,3 +45,7 @@ def test_count_risk_categories(data):
 		'No Violations' : 1,
 		'' : 24,
 	}
+
+def test_risk_categories_by_month(data):
+    result = count_risk_categories_by_month(data, 5, 2018)
+    assert result == {'Low Risk': 35}
