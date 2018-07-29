@@ -3,7 +3,6 @@ Utilities for working with SF restaurant data.
 
 """
 import csv
-from library import *
 from collections import Counter
 
 
@@ -38,17 +37,17 @@ def filter_month(data, month, year):
 	Returns a list of filtered data.
 	"""
 	input_month = str(month).zfill(2)
-    input_year = str(year)
+	input_year = str(year)
 
-    month_data = []
+	month_data = []
 
-    for row in data:
-        date_as_string = row['inspection_date'][:10]
-        month, day, year = date_as_string.split('/')
-        if input_month == month and input_year == year:
-            month_data.append(row)
+	for row in data:
+		date_as_string = row['inspection_date'][:10]
+		month, day, year = date_as_string.split('/')
+		if (input_month == month and input_year == year):
+			month_data.append(row)
 
-    return month_data
+	return month_data
 
 
 def count_risk_categories(data):
@@ -58,14 +57,16 @@ def count_risk_categories(data):
 	Returns dictionary pairing a risk caetegory with a number of occurences.
 	"""
 	results = Counter([row['risk_category'] for row in data])
-    if '' in results:
-        results['No Violations'] = results['']
-        del results['']
-    return results
+	if '' in results:
+		results['No Violations'] = results['']
+		del results['']
+	return results
 
 def count_risk_categories_by_month(data, month, year):
 	"""
 	Count the number of risk categories in a given month.
 
 	"""
-	
+	return count_risk_categories(
+		filter_inspection_type(
+			filter_month(data, month, year), 'Routine - Unscheduled'))
