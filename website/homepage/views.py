@@ -1,5 +1,9 @@
-from django.http import HttpResponse
-
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("<h2>Welcome to the Homepage.<h2>")
+    context = {
+        'name_var' : "Homepage",
+        'page_title' : 'Welcome to the Homepage',
+
+    }
+    return render(request, 'homepage/index.html', context)
