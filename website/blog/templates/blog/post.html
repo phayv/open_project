@@ -1,16 +1,21 @@
 {% extends 'homepage/header.html' %}
+{% load staticfiles %}
 
 {% block page_name %}
 {{ object.title }}
 {% endblock %}
 
 {% block page_title %}
+
+<img style="max-height:500px;max-width:800px" src="{% static post_pic_file %}"><br><br>
 {{ object.title }}
 <h4>{{ object.date|date:'Y-m-d' }}</h4>
 {% endblock %}
 
 {% block content %}
-<p>{{ object.entry|linebreaks }}</p>
+<div class="jumbotron">
+    <p>{{ object.entry|linebreaks }}</p>
+</div>
 {% endblock %}
 
 {% block footer %}
