@@ -1,0 +1,39 @@
+{% extends 'homepage/header.html' %}
+
+{% block page_name %}
+{{ object.title }}
+{% endblock %}
+
+{% block page_title %}
+{{ object.title }}
+<h4>{{ object.date|date:'Y-m-d' }}</h4>
+{% endblock %}
+
+{% block content %}
+<p>{{ object.entry|linebreaks }}</p>
+{% endblock %}
+
+{% block footer %}
+    {% if object.id == max %}
+        <nav aria-label="...">
+            <ul class="pager">
+                <li><a href="{{ previous_post_id }}">Previous</a></li>
+            </ul>
+        </nav>
+
+    {% elif object.id == min %}
+        <nav aria-label="...">
+            <ul class="pager">
+                <li><a href="{{ next_post_id }}">Next</a></li>
+            </ul>
+        </nav>
+
+    {% else %}
+        <nav aria-label="...">
+            <ul class="pager">
+                <li><a href="{{ previous_post_id }}">Previous</a></li>
+                <li><a href="{{ next_post_id }}">Next</a></li>
+            </ul>
+        </nav>
+    {% endif %}
+{% endblock %}

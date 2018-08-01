@@ -2,10 +2,14 @@
 <html lang="en">
 
 <head>
-	<title>{{ name_var }}</title>
+	<title>
+		{% block page_name %}
+		{% endblock %}
+	</title>
 	<meta charset="utf-8" />
 	{% load staticfiles %}
 	<link rel="stylesheet" href="{% static 'homepage/css/bootstrap.min.css' %}" type = "text/css"/>
+	<link rel="stylesheet" href="{% static 'homepage/css/callout.css' %}" type = "text/css"/>
 	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
 
 	<style type="text/css">
@@ -33,9 +37,9 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			  <ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+				<li><a href="/">Home<span class="sr-only">(current)</span></a></li>
 				<li><a href="#">About</a></li>
-				<li><a href="#">Portfolio</a></li>
+				<li><a href="/blog/">Portfolio</a></li>
 			  </ul>
 			  <form class="navbar-form navbar-right">
 				<div class="form-group">
@@ -46,6 +50,7 @@
 			</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
+
 		<div class="row">
 			  <div class="col-sm-1">
 				  <br>
@@ -56,7 +61,10 @@
 			  <div class="col-sm-10">
 				  <br>
 				  <center>
-				  <h1>{{ page_title }}</h1>
+				  <h1>
+					  {% block page_title %}
+					  {% endblock %}
+				  </h1>
 				  </center>
 			  </div>
 		</div><hr>
@@ -65,11 +73,12 @@
 			   {% block content %}
 			   {% endblock %}
 		</div>
+
+		{% block footer %}
+		{% endblock %}
 	</div>
+
 	<footer>
-		<div class="container-fluid" style='margin-left:15px'>
-			<p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>
-		</div>
 	</footer>
 
 </body>

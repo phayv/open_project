@@ -1,0 +1,36 @@
+{% extends 'homepage/header.html' %}
+
+{% block page_name %}
+{{ page_name }}
+{% endblock %}
+
+{% block page_title %}
+<h1>{{ title }}</h1>
+{% endblock %}
+
+{% block content %}
+
+        {% for post in object_list %}
+        <div class="bs-callout bs-callout-primary">
+            <div class="media" style="max-height:200px">
+                <div class="media-left media-middle">
+                    <a href="/blog/{{post.id}}">
+                        <img class="media-object" src="..." alt="...">
+                    </a>
+                </div>
+
+                <div class="media-body">
+                    <h4 class="media-heading">
+                        <a href="/blog/{{post.id}}">{{post.title}}</a>
+                    </h4>
+                    <h5>{{ post.date|date:"Y-m-d" }}</h5>
+                    <p>{{post.entry|linebreaks}}</p>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+
+{% endblock %}
+
+
