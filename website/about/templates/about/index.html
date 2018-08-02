@@ -1,0 +1,30 @@
+{% extends 'homepage/header.html' %}
+{% load staticfiles %}
+
+{% block page_name %}
+{{ page_name }}
+{% endblock %}
+
+{% block page_title %}
+<h1>{{ title }}</h1>
+{% endblock %}
+
+{% block content %}
+<p>
+    This is the about me section.
+</p>
+{% endblock %}
+
+{% block bottom %}
+<div class="container-fluid" style='margin-left:15px'>
+    <p align="center">
+        <!--<p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>-->
+        <button type="button" class="btn btn-default">
+            <a href="#" style="color:black"><span class="glyphicon glyphicon-envelope"> gmail</span></a>
+        </button>
+        <button type="button" class="btn btn-default">
+            <a href="#" style="color:black"><span class="glyphicon glyphicon-thumbs-up"> facebook</span></a>
+        </button>
+    </p>
+</div>
+{% endblock %}

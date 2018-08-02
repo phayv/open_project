@@ -32,3 +32,14 @@ class PostDetailView(generic.detail.DetailView):
         context['post_pic_file'] = 'blog/img/{}.jpg'.format(self.kwargs['pk'])
 
         return context
+
+
+"""
+    def get(self, request, *args, **kwargs):
+        try:
+            self.object = self.get_object()
+        except Http404:
+            return redirect('/blog/')
+        context = self.get_context_data(object=self.object)
+        return self.render_to_response(context)
+"""

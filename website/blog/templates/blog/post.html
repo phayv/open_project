@@ -7,9 +7,9 @@
 
 {% block page_title %}
 
-<img style="max-height:500px;max-width:800px" src="{% static post_pic_file %}"><br><br>
+<img style="max-height:500px;max-width:800px" src="{% static object.file_location %}"><br><br>
 {{ object.title }}
-<h4>{{ object.date|date:'Y-m-d' }}</h4>
+<!--<h4>{{ object.date|date:'Y-m-d' }}</h4>-->
 {% endblock %}
 
 {% block content %}
@@ -18,7 +18,7 @@
 </div>
 {% endblock %}
 
-{% block footer %}
+{% block bottom %}
     {% if object.id == max %}
         <nav aria-label="...">
             <ul class="pager">
