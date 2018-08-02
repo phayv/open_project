@@ -25,12 +25,9 @@ class PostDetailView(generic.detail.DetailView):
         context['list_of_ids'] = [x.id for x in Post.objects.order_by("id")]
         context['min'] = min(context['list_of_ids'])
         context['max'] = max(context['list_of_ids'])
-
         context['previous_post_id'] = int(self.kwargs['pk']) - 1
         context['next_post_id'] = int(self.kwargs['pk']) + 1
-
         context['post_pic_file'] = 'blog/img/{}.jpg'.format(self.kwargs['pk'])
-
         return context
 
 
