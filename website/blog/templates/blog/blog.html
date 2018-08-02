@@ -1,6 +1,18 @@
 {% extends 'homepage/header.html' %}
 {% load staticfiles %}
 
+{% block style %}
+.text {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 16px;
+   max-height: 48px;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+}
+{% endblock %}
+
 {% block page_name %}
 {{ page_name }}
 {% endblock %}
@@ -33,7 +45,7 @@
                     <a href="{% url 'blog:post-detail' post.id %}">{{post.title}}</a>
                 </h4>
                 <!--<h5>{{ post.date|date:"Y-m-d" }}</h5>-->
-                <p>{{post.entry|linebreaks}}</p>
+                <br><div class="text">{{post.entry|linebreaks}}</div>
             </div>
         </div>
     </div>

@@ -10,13 +10,16 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="{% static 'homepage/css/bootstrap.min.css' %}" type = "text/css"/>
 	<link rel="stylesheet" href="{% static 'homepage/css/callout.css' %}" type = "text/css"/>
-	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
 
 	<style type="text/css">
 		html,
 		body {
 		  height:100%
 		}
+	{% block style %}
+	{% endblock %}
 	</style>
 </head>
 
@@ -49,7 +52,7 @@
 	</div><!-- /.container-fluid -->
 </nav>
 
-<body class="body" style="background-color:#f6f6f6">
+<body class="body" style="background-color:#f6f6f6;">
 	<div class="container-fluid" style="min-height:95%; ">
 		<div class="row">
 			  <div class="col-sm-1">
@@ -70,16 +73,11 @@
 			   {% block content %}
 			   {% endblock %}
 		</div>
-
-		{% block bottom %}
-		{% endblock %}
 	</div>
 
-	<footer>
-		{% block footer %}
-		{% endblock %}
-	</footer>
-
+    <footer>
+        This is the footer
+    </footer>
 </body>
 
 </html>
