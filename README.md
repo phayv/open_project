@@ -5,7 +5,7 @@ I do not own the pictures, I just used them as a reference to give a sense of wh
 
 ## Homepage and Footer:
 This footer is below every page, but one has to scroll there as to not be obtrusive.
-<img src='footer.png">
+<img src="footer.png">
           
 This is currently the homepage, it displays the three most recent posts.
 <img src="homepage.png">
