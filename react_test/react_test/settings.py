@@ -37,6 +37,7 @@ REST_FRAMEWORK = [
 
 INSTALLED_APPS = [
     'products.apps.ProductsConfig',
+    'frontend.apps.FrontendConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

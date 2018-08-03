@@ -19,4 +19,5 @@ from django.urls import path, re_path, include
 urlpatterns = [
     re_path('^admin/', admin.site.urls),
     re_path('^product/', include('products.urls')),
+    re_path('^$', include('frontend.urls'))
 ]
