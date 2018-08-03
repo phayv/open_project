@@ -10,8 +10,6 @@
 	{% load staticfiles %}
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="{% static 'homepage/css/bootstrap.min.css' %}" type="text/css"/>
-	<link rel="stylesheet" href="{% static 'homepage/css/callout.css' %}" type="text/css"/>
-	<link rel="stylesheet" href="{% static 'homepage/css/footer-bs.css' %}" type="text/css"/>
 	<link rel="stylesheet" href="{% static 'homepage/css/phay-custom.css' %}" type="text/css"/>
 
 	<script src="{% static 'homepage/js/bootstrap.min.js' %}"></script>
@@ -24,15 +22,13 @@
 		body {
 		  height:100%
 		}
-	{% block style %}
-	{% endblock %}
 	</style>
 </head>
+
 
 <nav class="navbar navbar-inverse">
 	<div class="container-fluid">
 
-		<!-- toggle collpse when navbar small -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 			<span class="sr-only">Toggle navigation</span>
@@ -46,7 +42,7 @@
 			<ul class="nav navbar-nav">
 				<li><a href="/">Home<span class="sr-only">(current)</span></a></li>
 				<li><a href="/blog/"><span>Portfolio</span></a></li>
-				<li><a href="/about/">About</a></li>
+				<li><a href="{% url 'about:index' %}">About</a></li>
 			</ul>
 		  	<form class="navbar-form navbar-right">
 				<div class="form-group">
@@ -58,8 +54,11 @@
 	</div>
 </nav>
 
+
 <body class="body" style="background-color:#f6f6f6;">
-	<div class="container-fluid" style="min-height:95%; ">
+
+	<!-- START PAGE CONTENT -->
+	<div class="container-fluid"style="min-height:100%; ">
 		<div class="row">
 			  <div class="col-sm-1">
 				  <center>
@@ -81,10 +80,14 @@
 			   {% block content %}
 			   {% endblock %}
 		</div>
+        {% block bottom %}
+        {% endblock %}
 	</div>
+	<!-- END PAGE CONTENT -->
 
 
 	<!-- START FOOTER -->
+
     <footer class="footer-bs">
         <div class="row">
         	<div class="col-md-4 footer-brand animated fadeInLeft">
@@ -117,6 +120,7 @@
         </div><br>
 		<footer class="footer" align="center">© All rights reserved</footer>
     </footer>
+
 	<!-- END FOOTER -->
 
 </body>
