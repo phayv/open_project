@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5951ed37-e01c-4818-9c86-4259095f9560" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../node_modules/babel-core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../node_modules/babel-core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/babel-loader/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../node_modules/babel-loader/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/babel-plugin-transform-class-properties/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../node_modules/babel-plugin-transform-class-properties/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/babel-preset-env/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../node_modules/babel-preset-env/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/babel-preset-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../node_modules/babel-preset-react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/prop-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../node_modules/prop-types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/react-dom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../node_modules/react-dom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_modules/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../node_modules/react/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../node_modules/webpack-cli/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../node_modules/webpack-cli/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../node_modules/webpack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../node_modules/webpack/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Apps.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Apps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/templates/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/frontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../website/homepage/static/homepage/js/npm.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../website/homepage/static/homepage/js/phay-custom.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../website/homepage/templates/homepage/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/homepage/templates/homepage/header.html" afterDir="false" />
@@ -65,62 +75,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/templates/frontend/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/components/DataProvider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/components/Apps.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.babelrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/components/Table.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -185,48 +140,6 @@
             <path>
               <item name="react_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="react_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react_test" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react_test" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react_test" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react_test" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react_test" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react_test" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react_test" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react_test" type="b2602c69:ProjectViewProjectNode" />
@@ -305,7 +218,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="147" y="23" width="1293" height="818" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
@@ -474,17 +386,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
