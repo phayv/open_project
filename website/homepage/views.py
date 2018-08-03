@@ -7,8 +7,8 @@ class IndexView(generic.list.ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['page_name'] = "Portfolio"
-        context['title'] = 'Portfolio Page'
+        context['page_name'] = "Homepage"
+        context['title'] = 'Welcome to the Homepage'
         context['first_three'] = Post.objects.order_by('-id')[:3]
         return context
 
