@@ -7,3 +7,5 @@ class Product(models.Model):
     description = models.TextField()
     cost = models.FloatField()
 
+    def __str__(self):
+        return self.name
