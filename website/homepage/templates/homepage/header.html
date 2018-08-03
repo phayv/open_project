@@ -40,9 +40,9 @@
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="/">Home<span class="sr-only">(current)</span></a></li>
-				<li><a href="/blog/"><span>Portfolio</span></a></li>
-				<li><a href="{% url 'about:index' %}">About</a></li>
+                <li><a href="{% url 'homepage:index' %}"><div class="navbar-custom-text">Home</div></a></li>
+				<li><a href="{% url 'blog:index' %}"><div class="navbar-custom-text">Portfolio</div></a></li>
+				<li><a href="{% url 'about:index' %}"><div class="navbar-custom-text">About</div></a></li>
 			</ul>
 		  	<form class="navbar-form navbar-right">
 				<div class="form-group">
@@ -53,6 +53,7 @@
 		</div>
 	</div>
 </nav>
+
 
 
 <body class="body" style="background-color:#f6f6f6;">
@@ -91,17 +92,17 @@
     <footer class="footer-bs">
         <div class="row">
         	<div class="col-md-4 footer-brand animated fadeInLeft">
-            	<h2>Logo</h2>
+            	<h2>Introduction</h2>
 				<p style="font-size:14px">
 					Hello,<br><br>
-					This is a paragraph that will be there forever.
+					This is a website for my interior design portfolio. I explain my thought process through my projects to give a sense of what I think about.
 				</p>
             </div>
         	<div class="col-md-4 footer-nav animated fadeInUp">
             	<h4>— Menu —</h4>
             	<div class="col-md-6">
                     <ul class="list">
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="{% url 'about:index' %}">About Us</a></li>
                         <li><a href="#">Contacts</a></li>
                         <li><a href="#">Terms & Condition</a></li>
                         <li><a href="#">Privacy Policy</a></li>
@@ -118,9 +119,8 @@
                 </ul>
             </div>
         </div><br>
-		<footer class="footer" align="center">© All rights reserved</footer>
+		<footer class="footer" align="center">© 2018 Privacy Policy</footer>
     </footer>
-
 	<!-- END FOOTER -->
 
 </body>

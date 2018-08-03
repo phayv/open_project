@@ -8,8 +8,19 @@
    -webkit-box-orient: vertical;
 }
 
-/***** Start of Navbar CSS *****/
+.navbar-custom-text {
+    font-size: 18px;
+    color:rgba(255,255,255,250);
+}
 
+/***** Start of Navbar CSS *****/
+body{
+    background: #3c3d41;
+}
+
+.navbar{
+    background: #3c3d41;
+}
 
 /***** Start of Footer CSS *****/
 .footer-bs {
@@ -121,3 +132,5 @@
 .bs-callout-info h4 {
     color: #5bc0de;
 }
+
+
