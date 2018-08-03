@@ -1,0 +1,54 @@
+{% extends 'homepage/header.html' %}
+{% load staticfiles %}
+
+{% block page_name %}
+{{ object.title }}
+{% endblock %}
+
+{% block page_title %}
+
+<img style="max-height:500px;max-width:800px" src="{% static object.file_location %}"><br><br>
+{{ object.title }}
+<!--<h4>{{ object.date|date:'Y-m-d' }}</h4>-->
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <p>{{ object.entry|linebreaks }}</p>
+</div>
+{% endblock %}
+
+{% block bottom %}
+    {% if object.id == max %}
+        <nav aria-label="...">
+            <ul class="pager">
+                <li><a href="{{ previous_post_id }}">Previous</a></li>
+            </ul>
+        </nav>
+
+    {% elif object.id == min %}
+        <nav aria-label="...">
+            <ul class="pager">
+                <li><a href="{{ next_post_id }}">Next</a></li>
+            </ul>
+        </nav>
+
+    {% else %}
+        <nav aria-label="...">
+            <ul class="pager">
+                <li><a href="{{ previous_post_id }}">Previous</a></li>
+                <li><a href="{{ next_post_id }}">Next</a></li>
+            </ul>
+        </nav>
+    {% endif %}
+
+    <br>
+    <footer>
+        <p>Tags:
+            {% for tag in post.tags.all %}
+                <a href="#"> {{ tag }}</a>
+            {% endfor %}
+        </p>
+    </footer>
+{% endblock %}
+
