@@ -11,6 +11,46 @@
 
 {% block content %}
 <div class="jumbotron">
-    <p>This is jumbo</p>
+    <div class="row">
+        <div class="col-md-5">
+            <img src="{% static 'blog/img/contact_pic.jpg' %}" style="width:100%;height:100%">
+        </div>
+        <div class="col-md-7">
+            <div>
+                <h3>{{ form_title }}</h3>
+                <p>{{ paragraph }}</p>
+            </div>
+            <div>
+                <span id="input_name">
+                    <div class="form-group row">
+                        <div class="col-xs-5">
+                            <input class=form-control" type="text" id="first_name_form" placeholder=""><br>
+                            <label for="first_name_form">First Name</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input class=form-control" type="text" id="last_name_form" placeholder=""><br>
+                            <label for="last_name_form">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-5">
+                            <input class=form-control" type="text" id="email_form" placeholder=""><br>
+                            <label for="email_form">Email</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input class=form-control" type="text" id="phone_form" placeholder=""><br>
+                            <label for="phone_form">Phone</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="extra_info_form" rows="3"></textarea>
+                            <label for="extra_info_form">Anything special we should know about your project?</label>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
